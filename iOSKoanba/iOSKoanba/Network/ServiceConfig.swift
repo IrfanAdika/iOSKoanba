@@ -9,9 +9,9 @@
 import Foundation
 import Alamofire
 
-private let BASE_URL = ""
-private let URL_MOVIE = ""
-private let API_KEY = ""
+private let BASE_URL = "https://api.themoviedb.org/"
+private let URL_MOVIE = "3/movie/top_rated/"
+private let API_KEY = "27f7494f349b2950f4a6c3539034f6b7"
 
 enum ServiceConfig {
     case movie
@@ -81,7 +81,11 @@ extension ServiceConfig: URLRequestConvertible {
         case .movie:
             let link = "\(baseURL)\(path)"
             let url = URL(string: link)!
-            let param: [String:Any] = [:]
+            let param: [String:Any] = [
+                "api_key" : API_KEY,
+                "language" : "language=en-US",
+                "page" : "1"
+            ]
             let urlRequest = createURLEncoding(url: url, param: param)
             return urlRequest
         }

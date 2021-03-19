@@ -10,7 +10,6 @@
 		1327CAF478BB2725D6A9E540 /* Pods_iOSKoanba_iOSKoanbaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4274E00C67AF48A1C4F9E7F7 /* Pods_iOSKoanba_iOSKoanbaUITests.framework */; };
 		64A786102604F6AA00E5B37F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A7860F2604F6AA00E5B37F /* AppDelegate.swift */; };
 		64A786122604F6AA00E5B37F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786112604F6AA00E5B37F /* SceneDelegate.swift */; };
-		64A786142604F6AA00E5B37F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786132604F6AA00E5B37F /* ViewController.swift */; };
 		64A786192604F6AE00E5B37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A786182604F6AE00E5B37F /* Assets.xcassets */; };
 		64A7861C2604F6AE00E5B37F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A7861A2604F6AE00E5B37F /* LaunchScreen.storyboard */; };
 		64A786272604F6AE00E5B37F /* iOSKoanbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786262604F6AE00E5B37F /* iOSKoanbaTests.swift */; };
@@ -20,6 +19,14 @@
 		64A7864C2605006400E5B37F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A7864B2605006400E5B37F /* UIColor.swift */; };
 		64A786512605034D00E5B37F /* CoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786502605034D00E5B37F /* CoreApi.swift */; };
 		64A786532605036200E5B37F /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786522605036200E5B37F /* ServiceConfig.swift */; };
+		64A786562605047200E5B37F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786552605047200E5B37F /* Movie.swift */; };
+		64A786592605049B00E5B37F /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786582605049B00E5B37F /* MovieViewController.swift */; };
+		64A7865B260504A700E5B37F /* MovieContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A7865A260504A700E5B37F /* MovieContract.swift */; };
+		64A7865D260504B600E5B37F /* MoieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A7865C260504B600E5B37F /* MoieRouter.swift */; };
+		64A7865F260504C100E5B37F /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A7865E260504C100E5B37F /* MoviePresenter.swift */; };
+		64A78661260504CF00E5B37F /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A78660260504CF00E5B37F /* MovieInteractor.swift */; };
+		64A78663260504D800E5B37F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A78662260504D800E5B37F /* MovieCell.swift */; };
+		64A78666260507EC00E5B37F /* BaseApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A78665260507EC00E5B37F /* BaseApiModel.swift */; };
 		B9195C2704F39D99DEFAABA7 /* Pods_iOSKoanbaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8591951AC71FD5811B08612 /* Pods_iOSKoanbaTests.framework */; };
 		BE80A6624D05384A997E9174 /* Pods_iOSKoanba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87371BC622A4DAF1E836AC54 /* Pods_iOSKoanba.framework */; };
 /* End PBXBuildFile section */
@@ -50,7 +57,6 @@
 		64A7860C2604F6AA00E5B37F /* iOSKoanba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSKoanba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A7860F2604F6AA00E5B37F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64A786112604F6AA00E5B37F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64A786132604F6AA00E5B37F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64A786182604F6AE00E5B37F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A7861B2604F6AE00E5B37F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64A7861D2604F6AE00E5B37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +71,14 @@
 		64A7864B2605006400E5B37F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		64A786502605034D00E5B37F /* CoreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreApi.swift; sourceTree = "<group>"; };
 		64A786522605036200E5B37F /* ServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		64A786552605047200E5B37F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		64A786582605049B00E5B37F /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		64A7865A260504A700E5B37F /* MovieContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieContract.swift; sourceTree = "<group>"; };
+		64A7865C260504B600E5B37F /* MoieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoieRouter.swift; sourceTree = "<group>"; };
+		64A7865E260504C100E5B37F /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		64A78660260504CF00E5B37F /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		64A78662260504D800E5B37F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		64A78665260507EC00E5B37F /* BaseApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiModel.swift; sourceTree = "<group>"; };
 		762948A78A60051F5F00F1DE /* Pods-iOSKoanba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKoanba.debug.xcconfig"; path = "Target Support Files/Pods-iOSKoanba/Pods-iOSKoanba.debug.xcconfig"; sourceTree = "<group>"; };
 		87371BC622A4DAF1E836AC54 /* Pods_iOSKoanba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSKoanba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54860C52EAD5A586D857392 /* Pods-iOSKoanba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKoanba.release.xcconfig"; path = "Target Support Files/Pods-iOSKoanba/Pods-iOSKoanba.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,10 +151,12 @@
 		64A7860E2604F6AA00E5B37F /* iOSKoanba */ = {
 			isa = PBXGroup;
 			children = (
+				64A78664260507DA00E5B37F /* Base */,
+				64A786572605048100E5B37F /* Module */,
+				64A786542605046600E5B37F /* Data */,
 				64A7864F2605033F00E5B37F /* Network */,
 				64A786462605000600E5B37F /* Utils */,
 				64A786442604FF4A00E5B37F /* support */,
-				64A786132604F6AA00E5B37F /* ViewController.swift */,
 			);
 			path = iOSKoanba;
 			sourceTree = "<group>";
@@ -192,6 +208,35 @@
 				64A786522605036200E5B37F /* ServiceConfig.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		64A786542605046600E5B37F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				64A786552605047200E5B37F /* Movie.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		64A786572605048100E5B37F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				64A786582605049B00E5B37F /* MovieViewController.swift */,
+				64A7865A260504A700E5B37F /* MovieContract.swift */,
+				64A7865C260504B600E5B37F /* MoieRouter.swift */,
+				64A7865E260504C100E5B37F /* MoviePresenter.swift */,
+				64A78660260504CF00E5B37F /* MovieInteractor.swift */,
+				64A78662260504D800E5B37F /* MovieCell.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		64A78664260507DA00E5B37F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				64A78665260507EC00E5B37F /* BaseApiModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		B8CC74E1D9FB3288E42B44EB /* Frameworks */ = {
@@ -442,11 +487,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A786142604F6AA00E5B37F /* ViewController.swift in Sources */,
+				64A78663260504D800E5B37F /* MovieCell.swift in Sources */,
+				64A78666260507EC00E5B37F /* BaseApiModel.swift in Sources */,
 				64A7864C2605006400E5B37F /* UIColor.swift in Sources */,
+				64A786562605047200E5B37F /* Movie.swift in Sources */,
+				64A7865D260504B600E5B37F /* MoieRouter.swift in Sources */,
 				64A786102604F6AA00E5B37F /* AppDelegate.swift in Sources */,
+				64A78661260504CF00E5B37F /* MovieInteractor.swift in Sources */,
 				64A7864A2605005A00E5B37F /* Helper.swift in Sources */,
 				64A786122604F6AA00E5B37F /* SceneDelegate.swift in Sources */,
+				64A786592605049B00E5B37F /* MovieViewController.swift in Sources */,
+				64A7865F260504C100E5B37F /* MoviePresenter.swift in Sources */,
+				64A7865B260504A700E5B37F /* MovieContract.swift in Sources */,
 				64A786532605036200E5B37F /* ServiceConfig.swift in Sources */,
 				64A786512605034D00E5B37F /* CoreApi.swift in Sources */,
 				64A786482605003300E5B37F /* Constants.swift in Sources */,
