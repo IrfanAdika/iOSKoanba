@@ -15,6 +15,9 @@
 		64A7861C2604F6AE00E5B37F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A7861A2604F6AE00E5B37F /* LaunchScreen.storyboard */; };
 		64A786272604F6AE00E5B37F /* iOSKoanbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786262604F6AE00E5B37F /* iOSKoanbaTests.swift */; };
 		64A786322604F6AE00E5B37F /* iOSKoanbaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786312604F6AE00E5B37F /* iOSKoanbaUITests.swift */; };
+		64A786482605003300E5B37F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786472605003300E5B37F /* Constants.swift */; };
+		64A7864A2605005A00E5B37F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A786492605005A00E5B37F /* Helper.swift */; };
+		64A7864C2605006400E5B37F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A7864B2605006400E5B37F /* UIColor.swift */; };
 		B9195C2704F39D99DEFAABA7 /* Pods_iOSKoanbaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8591951AC71FD5811B08612 /* Pods_iOSKoanbaTests.framework */; };
 		BE80A6624D05384A997E9174 /* Pods_iOSKoanba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87371BC622A4DAF1E836AC54 /* Pods_iOSKoanba.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		64A7862D2604F6AE00E5B37F /* iOSKoanbaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSKoanbaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A786312604F6AE00E5B37F /* iOSKoanbaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSKoanbaUITests.swift; sourceTree = "<group>"; };
 		64A786332604F6AE00E5B37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64A786472605003300E5B37F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		64A786492605005A00E5B37F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		64A7864B2605006400E5B37F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		762948A78A60051F5F00F1DE /* Pods-iOSKoanba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKoanba.debug.xcconfig"; path = "Target Support Files/Pods-iOSKoanba/Pods-iOSKoanba.debug.xcconfig"; sourceTree = "<group>"; };
 		87371BC622A4DAF1E836AC54 /* Pods_iOSKoanba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSKoanba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54860C52EAD5A586D857392 /* Pods-iOSKoanba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKoanba.release.xcconfig"; path = "Target Support Files/Pods-iOSKoanba/Pods-iOSKoanba.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 		64A7860E2604F6AA00E5B37F /* iOSKoanba */ = {
 			isa = PBXGroup;
 			children = (
+				64A786462605000600E5B37F /* Utils */,
 				64A786442604FF4A00E5B37F /* support */,
 				64A786132604F6AA00E5B37F /* ViewController.swift */,
 			);
@@ -161,6 +168,16 @@
 				64A7861D2604F6AE00E5B37F /* Info.plist */,
 			);
 			path = support;
+			sourceTree = "<group>";
+		};
+		64A786462605000600E5B37F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				64A786472605003300E5B37F /* Constants.swift */,
+				64A786492605005A00E5B37F /* Helper.swift */,
+				64A7864B2605006400E5B37F /* UIColor.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B8CC74E1D9FB3288E42B44EB /* Frameworks */ = {
@@ -412,8 +429,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A786142604F6AA00E5B37F /* ViewController.swift in Sources */,
+				64A7864C2605006400E5B37F /* UIColor.swift in Sources */,
 				64A786102604F6AA00E5B37F /* AppDelegate.swift in Sources */,
+				64A7864A2605005A00E5B37F /* Helper.swift in Sources */,
 				64A786122604F6AA00E5B37F /* SceneDelegate.swift in Sources */,
+				64A786482605003300E5B37F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -564,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
