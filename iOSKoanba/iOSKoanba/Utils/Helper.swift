@@ -47,5 +47,10 @@ public class Helper {
             containerIndicator = nil
         }
     }
+    
+    //MARK : CHECKING IS CONNECTING TO NETWORK
+    class func isConnectedToInternet() -> Bool {
+        return NetworkReachabilityManager()!.isReachable
+    }
 
 }
