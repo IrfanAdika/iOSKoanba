@@ -127,12 +127,8 @@
 		64A7860E2604F6AA00E5B37F /* iOSKoanba */ = {
 			isa = PBXGroup;
 			children = (
-				64A7860F2604F6AA00E5B37F /* AppDelegate.swift */,
-				64A786112604F6AA00E5B37F /* SceneDelegate.swift */,
+				64A786442604FF4A00E5B37F /* support */,
 				64A786132604F6AA00E5B37F /* ViewController.swift */,
-				64A786182604F6AE00E5B37F /* Assets.xcassets */,
-				64A7861A2604F6AE00E5B37F /* LaunchScreen.storyboard */,
-				64A7861D2604F6AE00E5B37F /* Info.plist */,
 			);
 			path = iOSKoanba;
 			sourceTree = "<group>";
@@ -153,6 +149,18 @@
 				64A786332604F6AE00E5B37F /* Info.plist */,
 			);
 			path = iOSKoanbaUITests;
+			sourceTree = "<group>";
+		};
+		64A786442604FF4A00E5B37F /* support */ = {
+			isa = PBXGroup;
+			children = (
+				64A7860F2604F6AA00E5B37F /* AppDelegate.swift */,
+				64A786112604F6AA00E5B37F /* SceneDelegate.swift */,
+				64A786182604F6AE00E5B37F /* Assets.xcassets */,
+				64A7861A2604F6AE00E5B37F /* LaunchScreen.storyboard */,
+				64A7861D2604F6AE00E5B37F /* Info.plist */,
+			);
+			path = support;
 			sourceTree = "<group>";
 		};
 		B8CC74E1D9FB3288E42B44EB /* Frameworks */ = {
@@ -573,7 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87699HUK77;
-				INFOPLIST_FILE = iOSKoanba/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSKoanba/support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87699HUK77;
-				INFOPLIST_FILE = iOSKoanba/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSKoanba/support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
